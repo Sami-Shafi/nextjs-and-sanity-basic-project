@@ -1,4 +1,27 @@
-const project = {
+interface iOf {
+	type: string;
+}
+
+interface iProjectField {
+	name: string;
+	title: string;
+	type: string;
+	options?: {
+		source?: string;
+		hotspot?: boolean;
+	};
+	fields?: iProjectField[];
+	of?: iOf[];
+}
+
+interface iProject {
+	name: string;
+	title: string;
+	type: string;
+	fields: iProjectField[];
+}
+
+const project: iProject = {
 	name: "project",
 	title: "Projects",
 	type: "document",
