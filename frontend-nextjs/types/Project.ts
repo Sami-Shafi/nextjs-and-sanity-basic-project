@@ -6,13 +6,14 @@ export interface Project {
 	name: string;
 	slug: string;
 	image: string;
+	alt: string;
 	url: string;
 	content: PortableTextBlock[];
-};
+}
 
 export interface ProjectSchema {
 	name: string;
 	title: string;
 	type: string;
 	fields: any[];
-};
+}
